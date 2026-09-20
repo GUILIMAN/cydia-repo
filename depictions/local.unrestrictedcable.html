@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Unrestricted Cable</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin:0; font-family:-apple-system,'Helvetica Neue',sans-serif; background:#f2f2f7; color:#1c1c1e; }
+  @media (prefers-color-scheme: dark) { body { background:#000; color:#fff; } }
+  .card { background:rgba(120,120,128,0.12); border-radius:12px; margin:14px; padding:14px 16px; }
+  h1 { font-size:22px; margin:18px 16px 2px; }
+  .ver { color:#8e8e93; margin:0 16px 8px; font-size:14px; }
+  h2 { font-size:15px; text-transform:uppercase; color:#8e8e93; margin:18px 16px 6px; letter-spacing:0.3px; }
+  p, li { font-size:15px; line-height:1.5; margin:6px 0; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  td { padding:5px 6px; vertical-align:top; border-top:1px solid rgba(120,120,128,0.25); }
+  td:first-child { white-space:nowrap; color:#8e8e93; }
+  code { background:rgba(120,120,128,0.18); border-radius:4px; padding:1px 5px; font-size:13px; word-break:break-all; }
+  .ok { color:#30d158; font-weight:600; }
+  .warn { color:#ff9f0a; font-weight:600; }
+</style>
+</head>
+<body>
+  <h1>Unrestricted Cable</h1>
+  <p class="ver">1.0.0-1 &middot; local.unrestrictedcable</p>
+
+  <div class="card">
+    <p><b>Completely bypasses the MFi certification check</b> for Lightning cables and chargers — no
+    &ldquo;this cable or accessory is not certified&rdquo; popup, no charge suspension, always-on.</p>
+    <p>Single 51&nbsp;KB dylib, no dependencies beyond Cydia Substrate. Every hooked selector was verified
+    against the SpringBoard binary of iPad2,5&nbsp;iOS&nbsp;9.3.5&nbsp;(13G36) before compilation.</p>
+  </div>
+
+  <h2>What it patches</h2>
+  <div class="card">
+    <table>
+      <tr><td>SBUIController</td><td><code>isConnectedToUnsupportedChargingAccessory</code> → NO</td></tr>
+      <tr><td>SBUIController</td><td><code>setIsConnectedToUnsupportedChargingAccessory:</code> → swallowed</td></tr>
+      <tr><td>SBUIController</td><td><code>isConnectedToChargeIncapablePowerSource</code> → NO (forces charging)</td></tr>
+      <tr><td>SBLockScreenViewController</td><td><code>_unsupportedChargingAccessoryStateChanged:</code> → alert never built</td></tr>
+      <tr><td>SBApplication</td><td><code>suspendingUnsupported</code> → NO</td></tr>
+    </table>
+  </div>
+
+  <h2>Compatibility</h2>
+  <div class="card">
+    <p>iOS 8.0 – 9.x &middot; armv7 / armv7s devices (built &amp; verified on iPad mini 1, iOS 9.3.5/9.3.6)</p>
+    <p>Requires: Cydia Substrate (installed with any jailbreak)</p>
+  </div>
+
+  <h2>Kill switch</h2>
+  <div class="card">
+    <p>Create <code>/var/mobile/Library/Preferences/local.unrestrictedcable.plist</code> containing
+    <code>{ Enabled = false; }</code> and respring to disable. Delete the file to re-enable.</p>
+  </div>
+
+  <h2>Safety notes</h2>
+  <div class="card">
+    <p class="warn">This only bypasses iOS's <i>software</i> verdict.</p>
+    <p>The PMIC's hardware electrical protections are untouched — a genuinely dangerous charger is still
+    cut off. iAP2 <i>data</i>-session authentication (some car kits / audio docks) happens inside iap2d
+    and is not patched. Use decent-quality cables and chargers.</p>
+  </div>
+
+  <h2>Change log</h2>
+  <div class="card">
+    <p><b>1.0.0-1</b> — initial release</p>
+  </div>
+</body>
+</html>

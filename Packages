@@ -1,0 +1,17 @@
+Package: local.unrestrictedcable
+Name: Unrestricted Cable
+Version: 1.0.0-1
+Architecture: iphoneos-arm
+Description: Fully bypasses the MFi certification check for Lightning cables & chargers (no popup, forced charging)
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 8.0), firmware (<< 10.0)
+Author: Arena Agent Mode
+Maintainer: Arena Agent Mode
+Depiction: https://YOUR-USERNAME.github.io/cydia-repo/depictions/local.unrestrictedcable.html
+Icon: https://YOUR-USERNAME.github.io/cydia-repo/icon.png
+Filename: debs/local.unrestrictedcable_1.0.0-1_iphoneos-arm.deb
+Size: 2890
+MD5sum: e472801cf1696467ef7ee377128731ca
+SHA1: 6020e95d8e3cc1e22f6b94892a671b026b569e0e
+SHA256: 1394129f84754581906ec81c218b826161537f779be8081c79f57e15b6d61cae
+

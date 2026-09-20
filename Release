@@ -1,0 +1,24 @@
+Origin: Unrestricted Cable Repo
+Label: Unrestricted Cable Repo
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: iphoneos-arm
+Components: main
+Description: Personal repo — Unrestricted Cable (MFi certification bypass for iOS 8/9)
+Icons: https://YOUR-USERNAME.github.io/cydia-repo/CydiaIcon.png
+
+MD5Sum:
+ 4e2dabcbb7557eb7fbe9c5a0360a275a      741 Packages
+ 80f99fd5bf29528d1df5ca650860783e      482 Packages.gz
+ 0484ce06c09265dd5cc1d16f2bd86bfa      548 Packages.bz2
+
+SHA1:
+ 2787b524fc4dbc0b3ff4091471a40b71a4de9e6c      741 Packages
+ 7b42e3b9c4488986ab2035c96ba6373133c24156      482 Packages.gz
+ a0c33465e8c670c9f1023193aff353e3fd5d3553      548 Packages.bz2
+
+SHA256:
+ 79b9883b3f3068147e3ed84d255f3450bc97e0f4dedf079f751d95948fd66cb3      741 Packages
+ c117a83b10871dcd52fd5b72aa60aab190555d3eeaf7509537b22e301500e652      482 Packages.gz
+ bf25f018af00ca07dd08b13f6c51c8c90e5d8b174a8dac502290370772acf263      548 Packages.bz2
