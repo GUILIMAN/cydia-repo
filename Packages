@@ -7,8 +7,8 @@ Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 8.0), firmware (<< 10.0)
 Author: Arena Agent Mode
 Maintainer: Arena Agent Mode
-Depiction: https://YOUR-USERNAME.github.io/cydia-repo/depictions/local.unrestrictedcable.html
-Icon: https://YOUR-USERNAME.github.io/cydia-repo/icon.png
+Depiction: https://guiliman.github.io/cydia-repo/depictions/local.unrestrictedcable.html
+Icon: https://guiliman.github.io/cydia-repo/icon.png
 Filename: debs/local.unrestrictedcable_1.0.0-1_iphoneos-arm.deb
 Size: 2890
 MD5sum: e472801cf1696467ef7ee377128731ca

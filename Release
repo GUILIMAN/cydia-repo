@@ -6,19 +6,19 @@ Version: 1.0
 Architectures: iphoneos-arm
 Components: main
 Description: Personal repo — Unrestricted Cable (MFi certification bypass for iOS 8/9)
-Icons: https://YOUR-USERNAME.github.io/cydia-repo/CydiaIcon.png
+Icons: https://guiliman.github.io/cydia-repo/CydiaIcon.png
 
 MD5Sum:
- 4e2dabcbb7557eb7fbe9c5a0360a275a      741 Packages
- 80f99fd5bf29528d1df5ca650860783e      482 Packages.gz
- 0484ce06c09265dd5cc1d16f2bd86bfa      548 Packages.bz2
+ 3edc9a71b2c064afc5c1ba0aea1cc55e      731 Packages
+ eebda16c2c2c97edd144d8330951b9fe      471 Packages.gz
+ 381b5514d999d595147c9f4a01b67412      540 Packages.bz2
 
 SHA1:
- 2787b524fc4dbc0b3ff4091471a40b71a4de9e6c      741 Packages
- 7b42e3b9c4488986ab2035c96ba6373133c24156      482 Packages.gz
- a0c33465e8c670c9f1023193aff353e3fd5d3553      548 Packages.bz2
+ 9024964fd58dcd6435c94817b7bceaeed1f6d4d4      731 Packages
+ eb6db3df08b655c9839df6caf09f5371ddf13d17      471 Packages.gz
+ f02a06c9de8be688ca11b9377f4e2ecd9d0e2060      540 Packages.bz2
 
 SHA256:
- 79b9883b3f3068147e3ed84d255f3450bc97e0f4dedf079f751d95948fd66cb3      741 Packages
- c117a83b10871dcd52fd5b72aa60aab190555d3eeaf7509537b22e301500e652      482 Packages.gz
- bf25f018af00ca07dd08b13f6c51c8c90e5d8b174a8dac502290370772acf263      548 Packages.bz2
+ 2c9307266143b1a63e8166b3c59b42e79a0ea53ca657da737f22eed094f972a5      731 Packages
+ 95dddc6648e532aa9a2b253705cb23dba496c02bd9f5b51460db976bb131bf73      471 Packages.gz
+ 4f6f86de241cdc306a1bf258866b67e3bf4260d9e576fef30d96b8d02d155bf4      540 Packages.bz2
